@@ -15,7 +15,7 @@
 
 | Page | URL | Status |
 |------|-----|--------|
-| Landing Page | https://asunnyboy861.github.io/SoundSplit/ | ⏳ Pending |
+| Landing Page | https://asunnyboy861.github.io/SoundSplit/ | ✅ Active |
 | Support | https://asunnyboy861.github.io/SoundSplit/support.html | ✅ Active |
 | Privacy Policy | https://asunnyboy861.github.io/SoundSplit/privacy.html | ✅ Active |
 | Terms of Use | https://asunnyboy861.github.io/SoundSplit/terms.html | ✅ Active |
