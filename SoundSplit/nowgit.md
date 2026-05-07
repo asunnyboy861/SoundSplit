@@ -1,15 +1,79 @@
-# SoundSplit - NowGit
+# Git Repositories
+
+## Main App (iOS Application)
+
+| Item | Value |
+|------|-------|
+| **Repository Name** | SoundSplit |
+| **Git URL** | git@github.com:asunnyboy861/SoundSplit.git |
+| **Repo URL** | https://github.com/asunnyboy861/SoundSplit |
+| **Visibility** | Public |
+| **Primary Language** | Swift |
+| **GitHub Pages** | ✅ **ENABLED** (from `/docs` folder) |
+
+## Policy Pages (Deployed from Main Repository /docs)
+
+| Page | URL | Status |
+|------|-----|--------|
+| Landing Page | https://asunnyboy861.github.io/SoundSplit/ | ⏳ Pending |
+| Support | https://asunnyboy861.github.io/SoundSplit/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/SoundSplit/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/SoundSplit/terms.html | ✅ Active |
+
+Note: Terms of Use required for IAP subscription apps.
+
+## Repository Structure
+
+```
+SoundSplit/
+├── SoundSplit/                        # iOS App Source Code
+│   ├── SoundSplit.xcodeproj/          # Xcode Project
+│   ├── SoundSplit/                    # Swift Source Files
+│   │   ├── Views/
+│   │   │   ├── Main/
+│   │   │   │   ├── ProfileListView.swift
+│   │   │   │   └── ProfileCardView.swift
+│   │   │   ├── Edit/
+│   │   │   │   ├── ProfileEditView.swift
+│   │   │   │   ├── VolumeSliderView.swift
+│   │   │   │   └── IconPickerView.swift
+│   │   │   ├── Onboarding/
+│   │   │   │   └── OnboardingView.swift
+│   │   │   ├── Settings/
+│   │   │   │   ├── SettingsView.swift
+│   │   │   │   └── ContactSupportView.swift
+│   │   │   └── Paywall/
+│   │   │       └── PaywallView.swift
+│   │   ├── Models/
+│   │   │   └── VolumeProfile.swift
+│   │   ├── Managers/
+│   │   │   ├── AudioEngineManager.swift
+│   │   │   ├── ProfileManager.swift
+│   │   │   └── PurchaseManager.swift
+│   │   ├── Assets.xcassets/
+│   │   ├── ContentView.swift
+│   │   └── SoundSplitApp.swift
+│   ├── SoundSplitTests/
+│   └── SoundSplitUITests/
+├── docs/                              # Policy Pages (GitHub Pages source)
+│   ├── support.html                   # Support Page
+│   ├── privacy.html                   # Privacy Policy
+│   └── terms.html                     # Terms of Use
+├── .gitignore
+├── us.md                              # English Development Guide
+├── keytext.md                         # App Store Metadata
+├── capabilities.md                    # Capabilities Configuration
+├── icon.md                            # App Icon Details
+├── price.md                           # Pricing Configuration
+└── nowgit.md                          # This File
+```
 
 ## App Overview
+
 **SoundSplit** gives iPhone users independent control over ringer, media, and call volumes through customizable Volume Profiles.
 
-## Repository
-- **GitHub**: https://github.com/asunnyboy861/SoundSplit
-- **Bundle ID**: com.zzoutuo.SoundSplit
-- **Platform**: iOS 17.0+
-- **Language**: Swift / SwiftUI / SwiftData
-
 ## Key Features
+
 - Volume Profiles: Save and switch between custom volume configurations
 - Quick Actions: One-tap mute all or max volume
 - Onboarding: 3-screen guided introduction
@@ -17,50 +81,20 @@
 - Contact Support: In-app feedback form with topic selection
 
 ## Architecture
+
 - **MVVM Pattern**: Views → Managers → Models
 - **SwiftData**: Persistent storage for VolumeProfile
 - **StoreKit 2**: Subscription management
 - **Observation Framework**: @Observable for managers
 
-## File Structure
-```
-SoundSplit/
-├── Models/
-│   └── VolumeProfile.swift          # SwiftData model
-├── Managers/
-│   ├── AudioEngineManager.swift     # Volume control engine
-│   ├── ProfileManager.swift         # Profile switching logic
-│   └── PurchaseManager.swift        # StoreKit 2 subscriptions
-├── Views/
-│   ├── Main/
-│   │   ├── ProfileListView.swift    # Main screen
-│   │   └── ProfileCardView.swift    # Profile card component
-│   ├── Edit/
-│   │   ├── ProfileEditView.swift    # Create/edit profile
-│   │   ├── VolumeSliderView.swift   # Volume slider component
-│   │   └── IconPickerView.swift     # Icon selection grid
-│   ├── Onboarding/
-│   │   └── OnboardingView.swift     # 3-page onboarding
-│   ├── Settings/
-│   │   ├── SettingsView.swift       # Settings screen
-│   │   └── ContactSupportView.swift # Feedback form
-│   └── Paywall/
-│       └── PaywallView.swift        # Subscription paywall
-├── SoundSplitApp.swift              # App entry point
-└── ContentView.swift                # Root content view
-```
-
 ## Build Status
-- ✅ Build succeeded on iOS Simulator (iPhone Xs Max, iOS 18.4)
+
+- ✅ Build succeeded on iOS Simulator (iPhone XS Max, iOS 18.4)
 - ✅ App launches and runs correctly
 - ✅ Pushed to GitHub: main branch
 
-## Policy Pages
-- Support: https://asunnyboy861.github.io/SoundSplit/support.html
-- Privacy: https://asunnyboy861.github.io/SoundSplit/privacy.html
-- Terms: https://asunnyboy861.github.io/SoundSplit/terms.html
-
 ## Next Steps
+
 - [ ] Add App Intents for Shortcuts integration
 - [ ] Add Focus Filter API for Focus Mode
 - [ ] Add Control Center Widget

@@ -38,5 +38,5 @@ Based on operation guide analysis:
 - Siri: Handled via AppIntents (no separate capability needed)
 
 ## Verification
-- Build succeeded after configuration: ⏳ Pending (will verify after code generation)
-- All entitlements correct: ⏳ Pending
+- Build succeeded after configuration: ✅
+- All entitlements correct: ✅
